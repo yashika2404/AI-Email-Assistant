@@ -2,7 +2,7 @@ function generateEmail() {
     const emailContent = document.getElementById("emailContent").value;
     const tone = document.getElementById("tone").value;
 
-    fetch("/api/email/generate", {
+   fetch("https://ai-email-assistant-production-f688.up.railway.app/api/email/generate", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
